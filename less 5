@@ -1,0 +1,106 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void f1() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name = scan.next();
+        System.out.println("Hello " + name);
+    }
+
+    public static void f2(int num) {
+        int num1 = num / 5;
+        System.out.println(num1);
+    }
+
+    public static double f3(int x, int y){
+      return(x*y);
+    }
+
+    public static void f4(int x, int y, int z){
+      System.out.println(x+y+z);
+      System.out.println((x+y+z)/3);
+    }
+    public static void f5(double radius){
+      double hikef=(radius *6.28);
+      double area=(radius*radius*3.14);
+      System.out.println(area+""+hikef);
+    }
+
+    public static void f6(int a, int b){
+      double c= Math.sqrt((a*a)+(b*b));
+      System.out.println(c);
+    }
+    public static void f7(char l1, char l2, char l3){
+      System.out.println(l1+""+l2+""+l3);
+    }
+    public static double f8(double eyvar1, double hefresh, int mispar){
+      double eyvar_clali = eyvar1+((mispar-1)*hefresh);
+      return eyvar_clali;
+    }
+
+    public static void f9(String string1) {
+    int length = string1.length();
+    System.out.println(length * length);
+    }
+
+    public static void f10(String string1, String string2) {
+        if (string1.length() > string2.length()) {
+            System.out.println(string1);
+        } else {
+            System.out.println(string2);
+        }
+    }
+
+    public static boolean f11(String string1, int num) {
+        if (string1.length() == num) {
+            return (true);
+        } else {
+            return (false);
+        }
+    }
+
+    public static boolean f12() {
+      Random random = new Random();
+      int number1 = random.nextInt(6) + 1;
+      int number2 = random.nextInt(6) + 1;
+      if (number1 == number2) {
+        return true;
+      } else {
+        return false;
+      }
+    } 
+
+  public static boolean f13(char char1, String str) {
+    char char2 = str.charAt(0);
+    char char3 = str.charAt(1);
+    char char4 = str.charAt(2);
+    char char5 = str.charAt(3);
+    if (char1  == char2)
+      return true;
+    if (char1  == char3)
+      return true;
+    if (char1  == char4)
+      return true;
+    if (char1  == char5)
+      return true;
+    else
+      return false;
+  }
+  
+    public static void main(String[] args) {
+        f1();
+        f2(25);
+        f3(3,4);
+        f4(1,2,3);
+        f5(5);
+        f6(3,4);
+        f7('a','b','c');
+        f8(1,2,3);
+        f9("hinanit");
+        f10("yoav", "mor");
+        System.out.println(f11("idan", 4));
+        System.out.println(f12());
+    }
+}
